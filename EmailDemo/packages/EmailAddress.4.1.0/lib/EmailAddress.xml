@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmailAddress</name>
+    </assembly>
+    <members>
+        <member name="M:EmailAddressLibrary.EmailAddressValidator.Msdn(System.String)">
+            <summary>
+            Checks if the given email address is valid using MSDN implementation.
+            https://msdn.microsoft.com/library/01escwtf%28v=vs.100%29.aspx
+            </summary>
+            <param name="address">Email address to check</param>
+            <returns>True if the given email address is valid, false otherwise</returns>
+        </member>
+        <member name="M:EmailAddressLibrary.EmailAddressValidator.ReferenceSource(System.String)">
+            <summary>
+            Checks if the given email address is valid using Reference Source implementation.
+            http://referencesource.microsoft.com
+            </summary>
+            <param name="address">Email address to check</param>
+            <returns>True if the given email address is valid, false otherwise</returns>
+        </member>
+        <member name="M:EmailAddressLibrary.EmailAddressValidator.Haacked(System.String)">
+            <summary>
+            Checks if the given email address is valid using Phil Haack's implementation.
+            http://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx
+            </summary>
+            <param name="address">Email address to check</param>
+            <returns>True if the given email address is valid, false otherwise</returns>
+        </member>
+        <member name="M:EmailAddressLibrary.EmailAddressValidator.JStedfast(System.String)">
+            <summary>
+            Checks if the given email address is valid using Jeffrey Stedfast's implementation.
+            https://github.com/jstedfast/EmailValidation
+            </summary>
+            <param name="address">Email address to check</param>
+            <returns>True if the given email address is valid, false otherwise</returns>
+        </member>
+        <member name="M:EmailAddressLibrary.Implementations.JStedfastValidator.Validate(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Validate the specified email address.
+            </summary>
+            <remarks>
+            <para>Validates the syntax of an email address.</para>
+            <para>If <paramref name="allowTopLevelDomains"/> is <c>true</c>, then the validator will
+            allow addresses with top-level domains like <c>postmaster@dk</c>.</para>
+            <para>If <paramref name="allowInternational"/> is <c>true</c>, then the validator
+            will use the newer International Email standards for validating the email address.</para>
+            </remarks>
+            <returns><c>true</c> if the email address is valid; otherwise, <c>false</c>.</returns>
+            <param name="email">An email address.</param>
+            <param name="allowTopLevelDomains"><c>true</c> if the validator should allow addresses at top-level domains; otherwise, <c>false</c>.</param>
+            <param name="allowInternational"><c>true</c> if the validator should allow international characters; otherwise, <c>false</c>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="email"/> is <c>null</c>.
+            </exception>
+        </member>
+        <member name="T:EmailAddressLibrary.Implementations.ReferenceSource.SR">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.InvalidHeaderName">
+            <summary>
+              Looks up a localized string similar to An invalid character was found in header name..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.MailAddressInvalidFormat">
+            <summary>
+              Looks up a localized string similar to The specified string is not in the form required for an e-mail address..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.MailHeaderFieldInvalidCharacter">
+            <summary>
+              Looks up a localized string similar to An invalid character was found in the mail header: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.MailHeaderFieldMalformedHeader">
+            <summary>
+              Looks up a localized string similar to The mail header is malformed..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_cookie_attribute">
+            <summary>
+              Looks up a localized string similar to The &apos;{0}&apos;=&apos;{1}&apos; part of the cookie is invalid..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_argument_empty_string">
+            <summary>
+              Looks up a localized string similar to The value cannot be null or empty..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_chunked_not_allowed_with_content_length">
+            <summary>
+              Looks up a localized string similar to Both &apos;Content-Length&apos; and &apos;Transfer-Encoding: chunked&apos; headers can not be specified at the same time..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_chunked_not_allowed_with_empty_content">
+            <summary>
+              Looks up a localized string similar to &apos;Transfer-Encoding: chunked&apos; header can not be used when content object is not specified..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_absolute_baseaddress_required">
+            <summary>
+              Looks up a localized string similar to The base address must be an absolute URI..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_execution_error">
+            <summary>
+              Looks up a localized string similar to An error occurred while sending the request..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_http_baseaddress_required">
+            <summary>
+              Looks up a localized string similar to Only &apos;http&apos; and &apos;https&apos; schemes are allowed..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_invalid_requesturi">
+            <summary>
+              Looks up a localized string similar to An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_request_already_sent">
+            <summary>
+              Looks up a localized string similar to The request message was already sent. Cannot send the same request message multiple times..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_send_canceled">
+            <summary>
+              Looks up a localized string similar to Request for {0} was canceled..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_send_completed">
+            <summary>
+              Looks up a localized string similar to Request for {0} completed successfully. Returning response {1}: {2}.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_client_send_error">
+            <summary>
+              Looks up a localized string similar to An error occurred while sending {0}. {1}.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_buffersize_exceeded">
+            <summary>
+              Looks up a localized string similar to Cannot write more bytes to the buffer than the configured maximum buffer size: {0}..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_buffersize_limit">
+            <summary>
+              Looks up a localized string similar to Buffering more than {0} bytes is not supported..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_field_too_long">
+            <summary>
+              Looks up a localized string similar to The field cannot be longer than {0} characters..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_invalid_charset">
+            <summary>
+              Looks up a localized string similar to The character set provided in ContentType is invalid. Cannot read content as string using an invalid character set..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_no_task_returned">
+            <summary>
+              Looks up a localized string similar to The async operation did not return a System.Threading.Tasks.Task object..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_readonly_stream">
+            <summary>
+              Looks up a localized string similar to The stream does not support writing..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_stream_already_read">
+            <summary>
+              Looks up a localized string similar to The stream was already consumed. It cannot be read again..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_content_stream_copy_error">
+            <summary>
+              Looks up a localized string similar to Error while copying content to a stream..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_copyto_array_too_small">
+            <summary>
+              Looks up a localized string similar to The number of elements is greater than the available space from arrayIndex to the end of the destination array..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_handler_norequest">
+            <summary>
+              Looks up a localized string similar to A request message must be provided. It cannot be null..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_handler_noresponse">
+            <summary>
+              Looks up a localized string similar to Handler did not return a response message..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_handler_not_assigned">
+            <summary>
+              Looks up a localized string similar to The inner handler has not been assigned..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_invalid_etag_name">
+            <summary>
+              Looks up a localized string similar to The specified value is not a valid quoted string..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_invalid_from_header">
+            <summary>
+              Looks up a localized string similar to The specified value is not a valid &apos;From&apos; header string..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_invalid_header_name">
+            <summary>
+              Looks up a localized string similar to The header name format is invalid..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_invalid_host_header">
+            <summary>
+              Looks up a localized string similar to The specified value is not a valid &apos;Host&apos; header string..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_invalid_range">
+            <summary>
+              Looks up a localized string similar to Invalid range. At least one of the two parameters must not be null..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_invalid_value">
+            <summary>
+              Looks up a localized string similar to The format of value &apos;{0}&apos; is invalid..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_no_newlines">
+            <summary>
+              Looks up a localized string similar to New-line characters in header values must be followed by a white-space character..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_not_allowed_header_name">
+            <summary>
+              Looks up a localized string similar to Misused header name. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_not_found">
+            <summary>
+              Looks up a localized string similar to The given header was not found..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_headers_single_value_header">
+            <summary>
+              Looks up a localized string similar to Cannot add value because header &apos;{0}&apos; does not support multiple values..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_httpmethod_format_error">
+            <summary>
+              Looks up a localized string similar to The format of the HTTP method is invalid..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_invalid_cookiecontainer">
+            <summary>
+              Looks up a localized string similar to When using CookieUsePolicy.UseSpecifiedCookieContainer, the CookieContainer property must not be null..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_invalid_enable_first">
+            <summary>
+              Looks up a localized string similar to The {0} property must be set to &apos;{1}&apos; to use this property..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_invalid_proxy">
+            <summary>
+              Looks up a localized string similar to When using WindowsProxyUsePolicy.UseCustomProxy, the Proxy property must not be null..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_invalid_proxyusepolicy">
+            <summary>
+              Looks up a localized string similar to When using a non-null Proxy, the WindowsProxyUsePolicy property must be set to WindowsProxyUsePolicy.UseCustomProxy..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_io_read">
+            <summary>
+              Looks up a localized string similar to The read operation failed, see inner exception..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_log_content_no_task_returned_copytoasync">
+            <summary>
+              Looks up a localized string similar to Type &apos;{0}.CopyToAsync()&apos; did not return a System.Threading.Tasks.Task object..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_log_content_null">
+            <summary>
+              Looks up a localized string similar to Content set to &apos;&lt;null&gt;&apos;..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_log_headers_invalid_quality">
+            <summary>
+              Looks up a localized string similar to The &apos;q&apos; value is invalid: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_log_headers_invalid_value">
+            <summary>
+              Looks up a localized string similar to Value for header &apos;{0}&apos; has invalid format. Value: &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_log_headers_no_newlines">
+            <summary>
+              Looks up a localized string similar to Value for header &apos;{0}&apos; contains invalid new-line characters. Value: &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_log_headers_wrong_email_format">
+            <summary>
+              Looks up a localized string similar to Value &apos;{0}&apos; is not a valid email address. Error: {1}.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_message_not_success_statuscode">
+            <summary>
+              Looks up a localized string similar to Response status code does not indicate success: {0} ({1})..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_operation_started">
+            <summary>
+              Looks up a localized string similar to This instance has already started one or more requests. Properties can only be modified before sending the first request..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_parser_invalid_base64_string">
+            <summary>
+              Looks up a localized string similar to Value &apos;{0}&apos; is not a valid Base64 string. Error: {1}.
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_reasonphrase_format_error">
+            <summary>
+              Looks up a localized string similar to The reason phrase must not contain new-line characters..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_value_must_be_greater_than">
+            <summary>
+              Looks up a localized string similar to The specified value must be greater than {0}..
+            </summary>
+        </member>
+        <member name="P:EmailAddressLibrary.Implementations.ReferenceSource.SR.net_http_value_not_supported">
+            <summary>
+              Looks up a localized string similar to The value &apos;{0}&apos; is not supported for property &apos;{1}&apos;..
+            </summary>
+        </member>
+    </members>
+</doc>

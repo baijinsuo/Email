@@ -1,0 +1,11 @@
+F:\其它资源\EmailDemo\EmailDemo\bin\Debug\EmailDemo.exe.config
+F:\其它资源\EmailDemo\EmailDemo\bin\Debug\EmailDemo.exe
+F:\其它资源\EmailDemo\EmailDemo\bin\Debug\EmailDemo.pdb
+F:\其它资源\EmailDemo\EmailDemo\obj\Debug\EmailDemo.csprojAssemblyReference.cache
+F:\其它资源\EmailDemo\EmailDemo\obj\Debug\EmailDemo.csproj.CoreCompileInputs.cache
+F:\其它资源\EmailDemo\EmailDemo\obj\Debug\EmailDemo.exe
+F:\其它资源\EmailDemo\EmailDemo\obj\Debug\EmailDemo.pdb
+F:\其它资源\EmailDemo\EmailDemo\bin\Debug\EmailAddress.dll
+F:\其它资源\EmailDemo\EmailDemo\bin\Debug\EmailAddress.pdb
+F:\其它资源\EmailDemo\EmailDemo\bin\Debug\EmailAddress.xml
+F:\其它资源\EmailDemo\EmailDemo\obj\Debug\EmailDemo.csproj.CopyComplete
